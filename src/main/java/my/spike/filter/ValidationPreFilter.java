@@ -38,6 +38,7 @@ public class ValidationPreFilter extends ZuulFilter {
             RequestContext.getCurrentContext().setResponseStatusCode(401);
             RequestContext.getCurrentContext().setSendZuulResponse(false);
         }
+        RequestContext.getCurrentContext().addZuulRequestHeader("userid", "admin");
         return null;
     }
 }
