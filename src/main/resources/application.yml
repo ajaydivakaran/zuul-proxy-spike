@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    users:
+      path: /api/user/**
+      url: http://localhost:8080/
+
+server:
+  port: 8090
+
+
+
